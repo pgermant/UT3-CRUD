@@ -1,0 +1,93 @@
+:root {
+    --binter-green: #008000;
+    --binter-white: #FFFFFF;
+    --binter-gray: #F8F9FA;
+    --binter-dark: #343A40;
+  }
+  
+  body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    font-family: Arial, sans-serif;
+    background-color: var(--binter-white);
+    color: var(--binter-dark);
+  }
+  
+  .navbar {
+    background-color: var(--binter-green);
+  }
+  
+  .navbar-brand img {
+    height: 30px;
+  }
+  
+  .navbar-dark .navbar-nav .nav-link {
+    color: var(--binter-white);
+  }
+  
+  main {
+    flex: 1;
+    padding: 2rem 0;
+  }
+  
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  .card {
+    border: none;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  }
+  
+  .card-header {
+    background-color: var(--binter-green);
+    color: var(--binter-white);
+  }
+  
+  .btn-primary {
+    background-color: var(--binter-green);
+    border-color: var(--binter-green);
+  }
+  
+  .btn-primary:hover {
+    background-color: #006400;
+    border-color: #006400;
+  }
+  
+  footer {
+    background-color: var(--binter-gray);
+    padding: 1rem 0;
+    margin-top: auto;
+  }
+  
+  /* Estilos específicos para formularios */
+  form .form-control:focus {
+    border-color: var(--binter-green);
+    box-shadow: 0 0 0 0.2rem rgba(0, 128, 0, 0.25);
+  }
+  
+  /* Estilos para tablas */
+  .table thead th {
+    background-color: var(--binter-green);
+    color: var(--binter-white);
+  }
+  
+  /* Estilos para páginas de perfil */
+  .profile-image {
+    max-width: 150px;
+    border-radius: 50%;
+  }
+  
+  /* Estilos para páginas de reserva */
+  .reservation-card {
+    border-left: 5px solid var(--binter-green);
+  }
+  
+  /* Estilos responsivos */
+  @media (max-width: 768px) {
+    .navbar-brand img {
+      height: 25px;
+    }
+  }
